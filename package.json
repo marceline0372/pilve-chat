@@ -1,0 +1,16 @@
+{
+  "name": "cloud-chat-app",
+  "version": "1.0.0",
+  "description": "Pilverakendused PaaS Chat Rakendus (Redis + Firebase)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reader": "node reader.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "ioredis": "^5.4.1"
+  }
+}

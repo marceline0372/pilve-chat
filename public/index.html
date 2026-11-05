@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilverakendused PaaS Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="logo-area">
+        <span class="status-indicator"></span>
+        <h2>Pilve Vestlus (PaaS)</h2>
+      </div>
+      <p class="subtitle">Arhitektuur: Web &rarr; Redis &rarr; Reader &rarr; Firebase</p>
+    </header>
+
+    <div class="chat-messages" id="messagesList">
+      <div class="system-message">Laaditakse sõnumeid...</div>
+    </div>
+
+    <form class="chat-input-area" id="chatForm">
+      <div class="user-row">
+        <input type="text" id="usernameInput" placeholder="Sinu nimi / kasutajanimi" required />
+      </div>
+      <div class="message-row">
+        <input type="text" id="messageInput" placeholder="Sisesta sõnum..." autocomplete="off" required />
+        <button type="submit" id="sendBtn">Saada</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
